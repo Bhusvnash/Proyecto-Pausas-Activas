@@ -1,0 +1,19 @@
+{
+
+  "horasPausa": [
+    "10:34", 
+    "10:36",
+    "10:40",
+    "10:42",
+    "10:45", 
+    "10:48",
+    "10:51" 
+  ],
+  "diasLaborables": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ]
+}

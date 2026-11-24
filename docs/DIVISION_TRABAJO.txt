@@ -1,0 +1,21 @@
+Division de trabajo — Pausas Activas
+Fecha: 2026-11-20
+Spec: docs/RFs_Pausas_Activas.md
+
+Antigravity 
+- Estructura de la solución .NET 10
+- T1 Configuración y estado (RF-01 a RF-04): src/PausasActivas.Nucleo
+- T2 Arranque y ciclo de vida (RF-05 a RF-08): instancia única, inicio con Windows, bandeja
+- T3 Programación y disparo (RF-09 a RF-12): MotorPausas
+- Pruebas de ese núcleo: tests/PausasActivas.Tests
+- Contratos que la ventana debe respetar: Mostrar(Image, int), Cerrar(), eventos de Posponer, Saltar y Terminé
+
+OpenCode
+- T4 Presentación (RF-13 a RF-18)
+- T5 Interacción (RF-19 a RF-23)
+- T6 Recursos (RF-24 a RF-26)
+- Archivos que puede modificar:
+  - src/PausasActivas/Presentacion/VentanaPausa.cs  (solo apariencia: AplicarApariencia y layout)
+  - src/PausasActivas/Recursos/Imagenes/01.png … 05.png
+  - src/PausasActivas/Recursos/fin.wav
+- No modifica Núcleo, pruebas, Program.cs, AplicacionBandeja, config.json ni este documento.
